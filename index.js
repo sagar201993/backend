@@ -6,7 +6,7 @@ import Apple from "./categories/Apple.json" assert { type: "json" };
 import Cooling from "./categories/cooling.json" assert { type: "json" };
 
 app.use(express.json());
-
+app.use(cors());
 app.get("/smartphones", (req, res) => {
   res.json({
     data: Android,
